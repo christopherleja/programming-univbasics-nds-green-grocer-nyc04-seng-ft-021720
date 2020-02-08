@@ -93,4 +93,5 @@ def checkout(cart, coupons)
     total -= (total * 0.1)
   end
 total
+puts total
 end
