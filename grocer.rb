@@ -85,16 +85,16 @@ def checkout(cart, coupons)
   couponed_cart = apply_coupons(consolidated_cart, coupons)
   final_cart = apply_clearance(couponed_cart)
  
-  #total = 0
-  #i = 0
-  #puts final_cart
-  #while i < final_cart.length
-   # total += (final_cart[i][:price] * final_cart[i][:count])
-    #i += 1
-  #end
-  #if total > 100
-    #total -= (total * 0.1)
-  #end
-#total
+  total = 0
+  i = 0
+  puts final_cart
+  while i < final_cart.length
+    total += (final_cart[i][:price] * final_cart[i][:count])
+    i += 1
+  end
+  if total > 100
+    total -= (total * 0.1)
+  end
+total
 
 end
